@@ -7,7 +7,6 @@
  *
  * Return: 0 if tree is NULL.
  */
-
 int binary_tree_balance(const binary_tree_t *tree)
 {
 	if (tree)
@@ -27,12 +26,12 @@ size_t binary_tree_height(const binary_tree_t *tree)
 {
 	if (tree)
 	{
-		size_t lefth = 0, rights = 0;
+		size_t p = 0, z = 0;
 
-		lefth = tree->left ? 1 + binary_tree_height(tree->left) : 1;
-		rights = tree->right ? 1 + binary_tree_height(tree->right) : 1;
+		p = tree->left ? 1 + binary_tree_height(tree->left) : 1;
+		z = tree->right ? 1 + binary_tree_height(tree->right) : 1;
 
-		return ((lefth > rights) ? lefth : rights);
+		return ((p > z) ? p : z);
 	}
 
 	return (0);

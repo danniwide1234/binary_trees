@@ -38,7 +38,7 @@ avl_t *avl_remove(avl_t *root, int value)
 
 bst_t *bst_remove(bst_t *root, int value)
 {
-	int types = 0;
+	int type = 0;
 
 	if (root == NULL)
 		return (NULL);
@@ -48,9 +48,9 @@ bst_t *bst_remove(bst_t *root, int value)
 		bst_remove(root->right, value);
 	else if (value == root->n)
 	{
-		types = remove_type(root);
-		if (types != 0)
-			bst_remove(root->right, types);
+		type = remove_type(root);
+		if (type != 0)
+			bst_remove(root->right, type);
 	}
 	else
 		return (NULL);
@@ -144,7 +144,7 @@ int successor(bst_t *node)
 
 void bal(avl_t **tree)
 {
-	int kval;
+	int zval;
 
 	if (tree == NULL || *tree == NULL)
 		return;
@@ -152,9 +152,9 @@ void bal(avl_t **tree)
 		return;
 	bal(&(*tree)->left);
 	bal(&(*tree)->right);
-	kval = binary_tree_balance((const binary_tree_t *)*tree);
-	if (bval > 1)
+	zval = binary_tree_balance((const binary_tree_t *)*tree);
+	if (zval > 1)
 		*tree = binary_tree_rotate_right((binary_tree_t *)*tree);
-	else if (bval < -1)
+	else if (zval < -1)
 		*tree = binary_tree_rotate_left((binary_tree_t *)*tree);
 }
