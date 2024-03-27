@@ -10,6 +10,7 @@ heap_t *max(heap_t *tree);
  *
  * Return: The value stored in the root node.
  */
+
 int heap_extract(heap_t **root)
 {
 	int value;
