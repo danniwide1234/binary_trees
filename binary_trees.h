@@ -13,6 +13,7 @@
  * @left: Pointer to the left child node
  * @right: Pointer to the right child node
  */
+
 struct binary_tree_s
 {
 	int n;
@@ -30,6 +31,7 @@ typedef struct binary_tree_s heap_t;
  * @node: A node of a binary tree.
  * @next: The next node to traverse to in the binary tree.
  */
+
 typedef struct levelorder_queue_s
 {
 	binary_tree_t *node;
