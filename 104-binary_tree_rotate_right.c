@@ -7,6 +7,7 @@
  *
  * Return: A pointer to the new root node of the tree once rotated.
  */
+
 binary_tree_t *binary_tree_rotate_right(binary_tree_t *tree)
 {
 	binary_tree_t *pivot, *tmp;
