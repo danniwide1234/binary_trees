@@ -11,6 +11,7 @@ size_t binary_tree_size(const binary_tree_t *tree);
  *
  * Return: A pointer to the created node, or NULL on failure.
  */
+
 heap_t *heap_insert(heap_t **root, int value)
 {
 	heap_t *tree, *new, *flip;
