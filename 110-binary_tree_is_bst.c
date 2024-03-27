@@ -9,6 +9,7 @@ int is_bst_helper(const binary_tree_t *tree, int low, int high);
  *
  * Return: 1 if tree is a valid BST, and 0 otherwise.
  */
+
 int binary_tree_is_bst(const binary_tree_t *tree)
 {
 	if (tree == NULL)
