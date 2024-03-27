@@ -14,6 +14,7 @@ size_t height(const binary_tree_t *tree);
  *
  * Return: A pointer to the created node, or NULL on failure.
  */
+
 avl_t *avl_insert(avl_t **tree, int value)
 {
 	avl_t *new = NULL;
