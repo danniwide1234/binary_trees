@@ -13,6 +13,7 @@ bst_t *inorder_successor(bst_t *root);
  *
  * Return: A pointer to the new root node of the tree after removing.
  */
+
 bst_t *bst_remove(bst_t *root, int value)
 {
 	return (bst_remove_recursive(root, root, value));
