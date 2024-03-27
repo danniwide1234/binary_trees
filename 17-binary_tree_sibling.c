@@ -7,6 +7,7 @@
  *
  * Return: NULL if node is NULL or parent is NULL or node has no sibiling.
  */
+
 binary_tree_t *binary_tree_sibling(binary_tree_t *node)
 {
 	if (node == NULL || node->parent == NULL)
