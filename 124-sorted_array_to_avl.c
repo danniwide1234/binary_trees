@@ -6,10 +6,10 @@ avl_t *aux_sort(avl_t *parent, int *array, int begin, int last);
 /**
  * sorted_array_to_avl - Builds an AVL tree from an array.
  *
- * @array: A pointer to the first element of the array to be converted.
+ * @array: pointer to the first element of the array to be converted.
  * @size: The number of element in the array
  *
- * Return: A pointer to the root node of the created AVL tree, NULL on failure.
+ * Return: pointer to the root node of the created AVL tree, NULL on failure.
  */
 
 avl_t *sorted_array_to_avl(int *array, size_t size)
@@ -33,17 +33,17 @@ avl_t *aux_sort(avl_t *parent, int *array, int begin, int last)
 {
 	avl_t *root;
 	binary_tree_t *aux;
-	int mid = 0;
+	int midth = 0;
 
 	if (begin <= last)
 	{
-		mid = (begin + last) / 2;
-		aux = binary_tree_node((binary_tree_t *)parent, array[mid]);
+		midth = (begin + last) / 2;
+		aux = binary_tree_node((binary_tree_t *)parent, array[midth]);
 		if (aux == NULL)
 			return (NULL);
 		root = (avl_t *)aux;
-		root->left = aux_sort(root, array, begin, mid - 1);
-		root->right = aux_sort(root, array, mid + 1, last);
+		root->left = aux_sort(root, array, begin, midth - 1);
+		root->right = aux_sort(root, array, midth + 1, last);
 		return (root);
 	}
 	return (NULL);

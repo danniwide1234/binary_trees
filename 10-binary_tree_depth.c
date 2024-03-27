@@ -5,7 +5,7 @@
  *
  * @tree: A pointer to the node to measure the depth.
  *
- * Return: 0 if tree is NULL.
+ * Return: if tree is NULL then 0.
  */
 
 size_t binary_tree_depth(const binary_tree_t *tree)

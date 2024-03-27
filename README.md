@@ -1,3 +1,3 @@
 # Binary Trees 
-C Binary Trees project. The tasks are eye opening to what is obtainable
-in the real world.
+C Binary Trees project. It has greate advantages over linked list and
+find many important application in real life problem
