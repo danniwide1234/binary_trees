@@ -13,6 +13,7 @@ size_t binary_tree_size(const binary_tree_t *tree);
  *
  * Return: 1 if tree is a valid Max Binary Heap, and 0 otherwise.
  */
+
 int binary_tree_is_heap(const binary_tree_t *tree)
 {
 	if (!binary_tree_is_complete(tree))
