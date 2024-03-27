@@ -11,6 +11,7 @@ size_t height(const binary_tree_t *tree);
  *
  * Return: 1 if tree is a valid AVL Tree, and 0 otherwise.
  */
+
 int binary_tree_is_avl(const binary_tree_t *tree)
 {
 	if (tree == NULL)
