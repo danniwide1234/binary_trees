@@ -7,6 +7,7 @@
  *
  * Return: NULL if node is NULL or node has no uncle.
  */
+
 binary_tree_t *binary_tree_uncle(binary_tree_t *node)
 {
 	if (node == NULL || node->parent == NULL ||
