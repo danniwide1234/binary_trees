@@ -15,6 +15,7 @@ void bal(avl_t **tree);
  * Return: A pointer to the new root node of the tree after
  *         removing the desired value, and after rebalancing
  */
+
 avl_t *avl_remove(avl_t *root, int value)
 {
 	avl_t *root_a = (avl_t *) bst_remove((bst_t *) root, value);
